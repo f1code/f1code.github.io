@@ -1,0 +1,19 @@
+{
+  "name": "f1code.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files=css/*.css,*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f1code/f1code.github.io.git"
+  },
+  "author": "Nicolas Galler <ngaller@gmail.com> (http://nicocrm.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f1code/f1code.github.io/issues"
+  },
+  "homepage": "https://github.com/f1code/f1code.github.io#readme"
+}

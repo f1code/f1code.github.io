@@ -397,7 +397,8 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .btn {
-
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .dialog-overlay {
@@ -422,6 +423,25 @@ hr {
     display: none;
 }
 
+body {
+    background: url(../images/splash-medium.jpg) no-repeat;
+    background-size: auto 100%;
+    height: 100vh;
+    color: #eee;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -430,9 +450,14 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 400px) and (orientation: landscape) {
+
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
@@ -444,4 +469,8 @@ there.
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../images/splash-large.jpg);
+    }
+}
