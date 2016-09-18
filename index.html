@@ -10,5 +10,35 @@ title: "Home Page"
   <h1>{{site.title}}</h1>
   <h4>{{site.tagline}}</h4>
   <h4>Web, Mobile, CRM, Databases, API Integrations.</h4>
-  <h4><a href="#" id="contactus">Contact Us</a></h4>
+  <h4><a href="#contact-dialog" id="contactus">Contact Us</a></h4>
 </main>
+
+<div class="dialog" id="contact-dialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <form action="https://formspree.io/nic@f1code.com" method="POST">
+            <label>
+                Your name
+                <input type="text" name="name" required />
+            </label>
+            <label>
+                Your email
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                Your phone
+                <input type="tel" name="phone" />
+            </label>
+            <label>
+                How may we help you
+                <textarea name="comment" required></textarea>
+            </label>
+            <input type="hidden" name="_next" value="//f1code.com/#thankyou" />
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</div>
+
+<div class="dialog" id="thankyou">
+    Thank you for reaching out! 
+</div>
