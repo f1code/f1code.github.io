@@ -55,9 +55,16 @@ a {
 }
 
 
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
 main {
     max-width: 700px;
-    margin: 30px auto;
+    margin: 10% auto;
 
     h1 {
         width: 186px;
@@ -78,6 +85,10 @@ main {
         }
     }
 
+    .contactus {
+        clear: both;
+        padding-top: 40px;
+    }
 }
 
 // for the contact us dialog
