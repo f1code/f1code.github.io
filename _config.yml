@@ -22,7 +22,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://f1code.com" # the base hostname & protocol for your site
 twitter_username: f1_code
 github_username:  f1code
+# Use this for production
+#sass:
+#    style: :compressed
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima

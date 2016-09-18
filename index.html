@@ -1,23 +1,14 @@
 ---
 layout: default
+title: "Home Page"
+fulltitle: "My New Website | Update Coming August 2004" 
+excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead inside!
 ---
+<!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
+<!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section>
+  <h1>{{site.title}}</h1>
+  <h4>{{site.tagline}}. Isn't your website beautiful?!</h4>
+</section>
